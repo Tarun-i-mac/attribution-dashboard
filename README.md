@@ -116,22 +116,29 @@ Both models are built using window functions over:
 ```
 
 2. Run dbt pipeline
+```bash  
    dbt run
+```
 
 Run tests:
-
+```bash  
     dbt test
+```
 
 Inspect models:
-
+```bash
     dbt ls
+```
 
 Run specific model:
-
+```bash
    dbt run --select stg_user_journey_events
+```
 
 3. Run Streamlit dashboard
+```bash
 python -m streamlit run dashboard/app.py
+```
 
 --- 
 ## Failure Handling
