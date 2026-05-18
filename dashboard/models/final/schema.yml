@@ -1,0 +1,12 @@
+models:
+  - name: first_click_attribution
+    columns:
+      - name: user_pseudo_id
+        tests:
+          - not_null
+
+  - name: last_click_attribution
+    columns:
+      - name: user_pseudo_id
+        tests:
+          - not_null
