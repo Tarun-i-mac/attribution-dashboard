@@ -108,28 +108,32 @@ Both models are built using window functions over:
 - Channel wise revenue breakdown
 - Live view of recent events
 
-
+--- 
+## Run Instructions
 1. Install dependencies
-pip install -r requirements.txt
+```bash
+   pip install -r requirements.txt
+```
 
 2. Run dbt pipeline
-dbt run
+   dbt run
 
 Run tests:
 
-dbt test
+    dbt test
 
 Inspect models:
 
-dbt ls
+    dbt ls
 
 Run specific model:
 
-dbt run --select stg_user_journey_events
+   dbt run --select stg_user_journey_events
 
 3. Run Streamlit dashboard
 python -m streamlit run dashboard/app.py
 
+--- 
 ## Failure Handling
 - dbt failures
 - Ensure staging models exist before intermediate models
