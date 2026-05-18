@@ -135,7 +135,12 @@ Run specific model:
    dbt run --select stg_user_journey_events
 ```
 
-3. Run Streamlit dashboard
+3. Run ingestion script (stream simulation)
+```bash
+python dashboard/script/ingestion_script.py
+```
+
+4. Run Streamlit dashboard
 ```bash
 python -m streamlit run dashboard/app.py
 ```
