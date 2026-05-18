@@ -10,3 +10,6 @@ Added the raw table after normalising the column, timestamp and data
 
 # May 18, 2026, 20:00:00
 Split the raw table events into two intermediate models: all non-purchase events & Completed purchase
+
+# May 19, 2026 00:55:00
+Created final attribution tables for first and last click
