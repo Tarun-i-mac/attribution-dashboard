@@ -13,7 +13,7 @@ st.set_page_config(
 
 st.title("Attribution Dashboard")
 
-client = bigquery.Client()
+client = bigquery.Client(project="project-92d8b8b8-6c6a-463a-88d")
 
 PROJECT = "project-92d8b8b8-6c6a-463a-88d"
 DATASET = "labs"

@@ -109,6 +109,52 @@ Both models are built using window functions over:
 - Live view of recent events
 
 
+1. Install dependencies
+pip install -r requirements.txt
 
+2. Run dbt pipeline
+dbt run
+
+Run tests:
+
+dbt test
+
+Inspect models:
+
+dbt ls
+
+Run specific model:
+
+dbt run --select stg_user_journey_events
+
+3. Run Streamlit dashboard
+python -m streamlit run dashboard/app.py
+
+## Failure Handling
+- dbt failures
+- Ensure staging models exist before intermediate models
+- Validate dataset path: labs.*
+- Ensure correct schema mapping (event_ts, purchase_time)
+
+# Monitoring Suggestions
+- dbt run logs
+- Model execution time tracking
+- Data quality monitoring (dbt tests)
+
+- Revenue drift by channel
+- First vs Last click gap tracking
+
+- not_null checks on:
+user_pseudo_id
+event_ts
+purchase_time
+
+
+
+# Cost Notes
+- Uses GA4 sample dataset (limited time window)
+- Only required columns selected in staging
+- dbt models materialized as views (low cost)
+- No heavy runtime aggregations in dashboard
 
 
