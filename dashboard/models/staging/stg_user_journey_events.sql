@@ -22,4 +22,4 @@ SELECT
   ecommerce.purchase_revenue AS purchase_revenue
 
 FROM `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
-WHERE _TABLE_SUFFIX BETWEEN '20210120' AND '20210131'
+WHERE _TABLE_SUFFIX BETWEEN '20210101' AND '20210131'
