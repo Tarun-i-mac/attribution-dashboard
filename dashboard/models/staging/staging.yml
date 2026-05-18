@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_user_journey_events
+    description: Cleaned GA4 event data used for attribution analysis.
+
+    columns:
+      - name: user_pseudo_id
+        tests:
+          - not_null
+
+      - name: event_ts
+        tests:
+          - not_null
+
+      - name: event_name
+        tests:
+          - not_null
